@@ -1,4 +1,4 @@
-<h1># ResourceSharingPlan</h1>
+<h1>ResourceSharingPlan</h1>
 
 <h2>Description:</h2>
 
@@ -21,7 +21,7 @@
 <h2>More information:</h2>
   <h3>Contribution:</h3>
 
-  <h3>Citting*:</h3>
+  <h3>Citting:</h3>
 
   <h3>Acknowledment:</h3>
 
