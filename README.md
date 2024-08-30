@@ -1,28 +1,28 @@
 # ResourceSharingPlan
 
-1. Description:
+**Description**:
 
-2. Quick start:
-  a. Example:
+**Quick start**:
+  **Example**:
 
-  b. Installation/Usage:
+  **Installation/Usage**:
 
-3. Philosophy:
-  a. Ease of use:
+**Philosophy**:
+  **Ease of use**:
 
-  b. Scability:
+  **Scability**:
   
-  c. Connection with other tools/data repositpory:
+  **Connection with other tools/data repositpory**:
   
-  d. Linking with visual results:
+  **Linking with visual results**:
   
-4. Demo:
+**Demo**:
 
-5. More information:
-  a. Contribution:
+**More information**:
+  **Contribution**:
 
-  b. Citting:
+  **Citting**:
 
-  c. Acknowledment:
+  **Acknowledment**:
 
-  d. Future work:
+  **Future work**:
