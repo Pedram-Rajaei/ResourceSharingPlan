@@ -1,4 +1,4 @@
-<h1>ResourceSharingPlan</h1>
+<h1>Multi-Modal Dynamical Coherence Analysis (MDCA)</h1>
 
 <h2>Description:</h2>
 
