@@ -1,28 +1,28 @@
-# ResourceSharingPlan
+<h1># ResourceSharingPlan</h1>
 
-**Description**:
+<h2>**Description**:</h2>
 
-**Quick start**:
-  **Example**:
+<h2>**Quick start**:</h2>
+  <h3>Example**:</h3>
 
-  **Installation/Usage**:
+  <h3>**Installation/Usage**:</h3>
 
-**Philosophy**:
-  **Ease of use**:
+<h2>**Philosophy**:</h2>
+  **Ease of use**:</h3>
 
-  **Scability**:
+  <h3>**Scability**:</h3>
   
-  **Connection with other tools/data repositpory**:
+  <h3>**Connection with other tools/data repositpory**:</h3>
   
-  **Linking with visual results**:
+  <h3>**Linking with visual results**:</h3>
   
-**Demo**:
+<h2>**Demo**:</h2>
 
-**More information**:
-  **Contribution**:
+<h2>More information:</h2>
+  <h3>**Contribution**:</h3>
 
-  **Citting**:
+  <h3>**Citting**:</h3>
 
-  **Acknowledment**:
+  <h3>**Acknowledment**:</h3>
 
-  **Future work**:
+  <h3>**Future work**:</h3>
