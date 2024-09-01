@@ -3,7 +3,6 @@
 <h2>Description:</h2>
   Numerous studies of brain activity across a wide range of cognitive tasks and conditions suggest that rhythmic neural activity is organized precisely and context-dependently at multiple scales. Data analysis methods that capture network-level rhythmic dynamics are crucial for advancing our understanding of both healthy and pathological brain functions. To support this, we developed the LDCM toolbox.
 
-  
   In developing LDCM, we hypothesized that neural circuits can be identified by examining the full cross-spectral matrix (CSM) between neural sources—either through explicit or implicit characterization—and by identifying a small set of eigenvectors that serve as proxies for functional circuits. These eigenvectors capture the majority of co-variability in the data. The resulting estimated circuit structure is termed the "functional eigenmodes" of the system, with the associated eigenvalues characterizing the degree of engagement or disengagement of each circuit during cognitive tasks or in response to stimuli.
 
   LDCM is an open-source toolbox written in Python, offering a comprehensive modeling pipeline that includes model selection, simulation analysis, model identification, and validation processes. To facilitate analysis, LDCM provides multiple step-by-step examples that align modeling hypotheses with their implementation in the code. Additionally, the toolbox includes a manual explaining the theoretical foundations of each modeling approach and providing detailed instructions for using the functions.
@@ -35,8 +34,6 @@
 <h2>More information:</h2> For further information about the toolbox or to provide suggestions, please contact Ali Yousefi at aliyousefi@uh.edu.
 
 <h2>Contribution:</h2> This toolbox was developed through the collaborative efforts of the Yousefi Lab at the University of Houston, the Eden Lab at Boston University, and the Emery Brown Laboratory at MIT.
-
-<h2>Citting:</h2>
 
 <h2>Acknowledment:</h2> This research was supported by NIH grant XXXX. We would like to thank our research collaborators for their contributions in evaluating the toolset and providing insightful feedback. Our research collaborators are:
 1.	Catherine J. Chu, Mass. General Hospital and Harvard Medical School
