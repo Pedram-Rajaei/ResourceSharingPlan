@@ -13,7 +13,7 @@
   In the MDCA project, we provide different methods that we develop to characterize and analyize brain signals. We applied our methodologies on real data and parts of results are provided here. In the below, a short description foreach methods that is presented.
 
 <h3>State Space Coherence:</h3>
-    In State Space Coherence (SS-Coh) project, we provide mor robust algorithm for estimating Global Coherence (GCoh). To understand some aspects of SS-Coh modelling, you can read EMBC-2019 and bioRxiv-2020. In the RO1 proposal, we provide more complete modelling of SS-Coh. The complete description of the experimental protocol can be found in Purdon et al.
+    In State Space Coherence (SS-Coh) method, we provide mor robust algorithm for estimating Global Coherence (GCoh). To understand some aspects of SS-Coh modelling, you can read EMBC-2019 and bioRxiv-2020. In the RO1 proposal, we provide more complete modelling of SS-Coh. The complete description of the experimental protocol can be found in Purdon et al.
 
 <h4>Data</h4> 
   To assess SS-Coh model, we use EEG data from human patients under general anesthesia. The data set was collected in Emery Brown’s laboratory.
@@ -37,7 +37,7 @@ A) Whitening transformation in the anestheisa shown for a pair of channels given
 To get similar results, you can run provided code. After running GMM code, you will obtain the same result that we provide in above figures
 
 <h3>Latent Dynamical Coherence Model:</h3>
-In our previous work, we demonstrated a latent dynamical modeling framework called state-space global coherence, which characterizes spectral measures to capture slow-changing dynamics in network-level coherence. In this research, we develop a more general class of the state-space coherence model, that can capture fast and switching changes in the network-level rhythmic dynamics. For this framework, we assume both continuous and discrete latent processes derive the network-level rhythmic dynamics; this modeling assumption, will help us to build a more flexible model structure that can capture sophisticated dynamics present in the neural data. Below figure shows how we combine both continuous and switching dynamics in the model.
+In our previous work, we demonstrated a latent dynamical modeling framework called state-space global coherence, which characterizes spectral measures to capture slow-changing dynamics in network-level coherence. In this method, we develop a more general class of the state-space coherence model, that can capture fast and switching changes in the network-level rhythmic dynamics. For this framework, we assume both continuous and discrete latent processes derive the network-level rhythmic dynamics; this modeling assumption, will help us to build a more flexible model structure that can capture sophisticated dynamics present in the neural data. Below figure shows how we combine both continuous and switching dynamics in the model.
 
 <h4>Data</h4>
 To assess SS-Coh model, we use EEG data from human patients under general anesthesia. The data set was collected in Emery Brown’s laboratory.
@@ -54,11 +54,54 @@ Using this dataset, we will study the causal relationship between propofol blood
 
   <h4>Implementation</h4> 
 To get similar results, you can run provided code. After running GMM code, you will obtain the same result that we provide in above figures
-<h3>Switching Dynamic:</h3>
 
+<h3>Switching Dynamic:</h3>
+In this method, we will evaluate Switching mechanism in the brain by applying Global Coherence Algorithm. We evaluate the cluster analysis in one participant. A small number of functional circuits appear at different segments of the experiment; moreover, the same functional circuit emerges when a specific cognitive task is repeated.
+
+<h4>Data</h4>
+Data was recorded in 14-minute sessions, using a 20-channel dry-electrode EEG, while subjects performed different cognitive tasks. Each session started with eyes open (EO) looking at a screen (2 minutes), which was followed by two rounds of reading (RD) on-screen text (2 minutes), followed by mental serial subtraction (MS) (2 minutes), followed by alternating periods with eyes closed (EC) (2 minutes), and eyes open (2 minutes).
+
+<h4>Results</h4>
+In thise section, we try to show different dynamics in the brain would occure when we have are doing different tasks. This analysis is utilizing number of clusters based on dominant eigenvectors of the Cross Spectral Matrix (CSM) in Alpha and Beta bands applied to human EEG data from a task-switching experiment.
+
+**Task switching changes neural circuit engagement.**
+**A)** Coherogram shows task-dependent elevated synchrony in Alpha and Beta bands. **B)** Cluster indices derived by fitting the Gaussian mixture model to data points defined by stacking dominant eigenvectors of CSM in Alpha and Beta bands. The mixture model with 5 clusters gave the lowest BIC. The black circle shows the mode of indices per each segment of the experiment. Cluster index 3 represents EO, 2 represents MS, 5 represents RD, and 1 matches EC. Cluster index 4 might be another functional circuit present mostly in the MS segment. **C)** Mean of mixtures is projected on the scalp heatmap. The number on the top corresponds to the cluster index. The inferred clusters match the physiology as we observe an elevated occipital synchrony in the Alpha band during EO and frontal Beta band activity during MS segments.
+
+<h4>Implementation</h4>
+To get similar results, you can run provided code. After running GMM code, you will obtain the same result that we provide in above figures
 <h3>Stringer Data:</h3>
+Large scale recordings of brain-wide activity in awake mice during spontaneous behavior are publicly available to allow studies on how multidimensional behaviors are represented in distributed neural data. Using the mice dataset, we are interested in studying how coherence analysis will reveal interactions across neural nodes and their connections to behavior. To study the data, we will use empirical and parametric point-process coherence; we will also utilize mixed-data coherence analysis to study neural and behavioral data in tandem.
+
+<h4>Data</h4>
+Neural recordings of more than 3000 neurons are being recorded using eight-probe Neuropixels in awake mice (n=3), covering frontal, sensorimotor, retro-splenial cortex, hippocampus, striatum, thalamus, and mid-brain. The complete description of the experiment protocol can be found in Stringer et. al (2019). The analysis of this data revealed a multi-dimensional and brain-wide representation of the behavior. The result also shows despite behavior and neural activity contained fast-time scale fluctuations on the order of 200 msec, they are related to each other on a time scale of 1 second. Data set is publicly available in the following link: Download data
+
+<h4>Results</h4>
+Below figure shows elevated synchrony in the high-theta band as the mice start moving whiskers and eye gaze direction in response to stimuli
+
+**Behavioral changes accompany elevated coherence in spiking.**
+The coherence analysis is is shown for 250 seconds of the data. The coherence analysis is done over a subsampled neuronal population with 10 percent of neurons picked based on the brain regions (~100 neurons). **A)** Elevated synchrony in high-theta band starts from 150 seconds accompanying behavior change (red bar). There is a rapid switch in neural synchrony from the delta to the high-theta band around time 150 seconds. We hypothesize that the delta band synchrony is because of breathing; whilst the high-theta will represent some cognitive function **B)** Principal eigenvector over time showing more stable pattern of multi-neuron recruitment into synchronous group after 150 seconds. **C)** Images of mouse expression at time 50 and 200 seconds; the increased high-theta synchrony might encode elements of the behavior (eye gaze direction and increased whisking).
+
+<h4>Implementation</h4>
+To get similar results, you can run provided code. After running GMM code, you will obtain the same result that we provide in above figures
 
 <h3>Amygdala Data:</h3>
+In this project, we use empirical point-process coherence and global coherence analysis to study the human Amygdala dataset.
+
+<h4>Data</h4>
+We present an electrophysiological dataset collected from the amygdalae of nine subjects attending a visual dynamic stimulation of emotional aversive content. The subjects were patients affected by epilepsy who underwent preoperative invasive monitoring in the mesial temporal lobe. Subjects were presented with dynamic visual sequences of fearful faces (aversive condition), interleaved with sequences of neutral landscapes (neutral condition).
+
+We provide the recordings of intracranial EEG (iEEG) and metadata related to the task, subjects, sessions and electrodes in the BIDS standard.
+
+Data is publicly available. Please check the OpenNeuro Repository
+
+<h4>Results</h4>
+Here, we try to address how the stimulus content is being encoded in the spike timings of neural populations? Figure 1 shows point-process coherence analysis in the human Amygdala dataset. Preliminary result shows an increased synchrony in the Theta band (~3.5 Hz), which can be seen in this figure in aversive condition. This result corroborates physiological findings in rodents, where increased BLA’s neurons synchrony was observed in Theta band in response to fear stimulus ref.
+
+**Point-Process Coherence Analysis in Human Amygdala Dataset.** **(A)** 
+Cohereogram from 0.5 to 20 Hz in response to the neutral and aversive conditions. The stimulus starts at time 0 and lasts for 24 seconds. A clear increase in coherence can be seen from time 5 to 15 seconds in Theta band in the aversive condition, right panel. **(B)** Temporal progression of principal eigenvector. During the aversive condition, larger number of neurons are entrained to those with a regular spike timing. **(C)** Raster plot of 16 neurons in a sample trial in the neutral and aversive conditions. The increased synchrony can be easily seen in 5 to 15 seconds during the aversive condition.
+
+<h4>Implementation</h4>
+To get similar results, you can run provided code. After running GMM code, you will obtain the same result that we provide in above figures
 
 <h2>Philosophy:</h2>
   Our core effort in developing this toolbox is to promote open science. Open science fosters transparency, accessibility, and collaboration in research by encouraging the open sharing of data, methodologies, and results. By making scientific knowledge freely available, enhancing reproducibility, and fostering a more inclusive and collaborative scientific community, open science aligns with our goals for the MDCA toolbox. We aim to contribute to democratizing science, improving research quality, and involving the public in scientific endeavors. In particular, we have focused on the following aspects in our tool development:
@@ -75,8 +118,6 @@ To get similar results, you can run provided code. After running GMM code, you w
 
   <h3>Scientific Dissemination:</h3> We will present the toolset at various conferences, including but not limited to SFN. Demo videos will be made publicly available on our GitHub repository and platforms like YouTube. We will publish our modeling theories and any related scientific discoveries in scientific journals and conferences.
   
-<h2>Demo:</h2>
-
 <h2>More information:</h2> For further information about the toolbox or to provide suggestions, please contact Ali Yousefi at aliyousefi@uh.edu.
 
 <h2>Contribution:</h2> This toolbox was developed through the collaborative efforts of the Yousefi Lab at the University of Houston, the Eden Lab at Boston University, and the Emery Brown Laboratory at MIT.
