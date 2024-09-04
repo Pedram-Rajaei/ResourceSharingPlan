@@ -10,9 +10,27 @@
   LDCM is valuable for both experimental and theoretical neuroscientists, as well as researchers interested in studying brain function in conjunction with cognition and information processing. It also offers tools for clinicians and scientists investigating the connection between the brain and pathological states. While a basic understanding of neuroscience, dynamical systems, and functional connectivity is recommended, we strive to integrate this knowledge within the explanations of every example included in the toolbox.
 
 <h2>Quick start:</h2>
-  <h3>Example:</h3>
+  In the MDCA project, we provide different methods that we develop to characterize and analyize brain signals. We applied our methodologies on real data and parts of results are provided here. In the below, a short description foreach methods that is presented.
+  <h3>State Space Coherence:</h3>
+    In State Space Coherence (SS-Coh) project, we provide mor robust algorithm for estimating Global Coherence (GCoh). To understand some aspects of SS-Coh modelling, you can read EMBC-2019 and bioRxiv-2020. In the RO1 proposal, we provide more complete modelling of SS-Coh. The complete description of the experimental protocol can be found in Purdon et al.
+     <h4>Data</h4> 
+       To assess SS-Coh model, we use EEG data from human patients under general anesthesia. The data set was collected in Emery Brown’s laboratory.
 
-  <h3>Installation/Usage:</h3>
+The complete description of the experimental protocol can be found in Purdon et al .. Briefly, ten consenting human volunteers of ages 18-36 years were impaneled for the study approved by the MGH Human Research Committee. For each subject, the induction and emergence from propofol anesthesia were studied by administering a computer-controlled (StanPump) infusion of propofol using the target control protocol based on the Schnider pharmacokinetic-pharmacodynamic model, while the subject executed a behavioral task to identify the points of loss and recovery of consciousness. Neural activity was recorded from 64 channels of EEG at a 250 Hz sampling rate. The anesthesia data is publicly available at the following link: Anesthesia Data.
+
+Using this dataset, we will study the causal relationship between propofol blood concentration, level of consciousness, and spatio-temporal patterns of functional connectivity. Spectrograms, sliding window GCoh, and LDCM will be applied to identify network modes and their changes associated with loss of consciousness.
+
+     <h4>Implementation</h4> 
+
+     <h4>Results</h4> 
+
+  <h3>Latent Dynamical Coherence Model:</h3>
+
+  <h3>Switching Dynamic:</h3>
+
+  <h3>Stringer Data:</h3>
+
+  <h3>Amygdala Data:</h3>
 
 <h2>Philosophy:</h2>
   Our core effort in developing this toolbox is to promote open science. Open science fosters transparency, accessibility, and collaboration in research by encouraging the open sharing of data, methodologies, and results. By making scientific knowledge freely available, enhancing reproducibility, and fostering a more inclusive and collaborative scientific community, open science aligns with our goals for the MDCA toolbox. We aim to contribute to democratizing science, improving research quality, and involving the public in scientific endeavors. In particular, we have focused on the following aspects in our tool development:
