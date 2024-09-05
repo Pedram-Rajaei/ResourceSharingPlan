@@ -13,7 +13,7 @@ LDCM is valuable for both experimental and theoretical neuroscientists, as well 
   In the MDCA project, we provide different methods that we develop to characterize and analyize brain signals. We applied our methodologies on real data and parts of results are provided here. In the below, a short description foreach methods that is presented.
 
 <h3>State Space Coherence:</h3>
-    In State Space Coherence (SS-Coh) method, we provide mor robust algorithm for estimating Global Coherence (GCoh). To understand some aspects of SS-Coh modelling, you can read EMBC-2019 and bioRxiv-2020. In the RO1 proposal, we provide more complete modelling of SS-Coh. The complete description of the experimental protocol can be found in Purdon et al.
+    In State Space Coherence (SS-Coh) method, we provide mor robust algorithm for estimating Global Coherence (GCoh). To understand some aspects of SS-Coh modelling, you can read <a href="https://ieeexplore.ieee.org/abstract/document/8856634">EMBC-2019</a> and <a href="https://www.biorxiv.org/content/10.1101/2020.07.13.199034v1.abstract">bioRxiv-2020</a>. In the RO1 proposal, we provide more complete modelling of SS-Coh. The complete description of the experimental protocol can be found in <a href="https://www.pnas.org/doi/10.1073/pnas.1221180110">Purdon et al.
 
 <h4>Data</h4> 
   To assess SS-Coh model, we use EEG data from human patients under general anesthesia. The data set was collected in Emery Brown’s laboratory.
