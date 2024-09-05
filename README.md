@@ -24,7 +24,7 @@ Using this dataset, we will study the causal relationship between propofol blood
 
 <h4>Results</h4> 
 In the below we provide some results of SS-Coh model when we run it on the Anesthesia data set. In these results, We applied the SS-GCoh model to the anesthesia data (Fig. 1); the inferred results suggest that the functional circuit changes during different phases of the experiment reliably encode underlying consciousness states. The inferred functional connectivity using SS-GCoh along with its temporal changes not only corroborates the empirical results in Purdon et al ., but also tracks the dynamics with a finer temporal resolution
-![Alt Text](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/sscoh.jpg?raw=true)
+![Alt Text](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/sscoh.jpg)
 
 **SS-GCoh analysis in Alpha band for anesthesia EEG data and its correspondence with empirical results.**
 <br>
