@@ -1,4 +1,4 @@
-<h1>Multi-Modal Dynamical Coherence Analysis (MDCA)</h1>
+ <h1>Multi-Modal Dynamical Coherence Analysis (MDCA)</h1>
 
 <h2>Description:</h2>
   Numerous studies of brain activity across a wide range of cognitive tasks and conditions suggest that rhythmic neural activity is organized precisely and context-dependently at multiple scales. Data analysis methods that capture network-level rhythmic dynamics are crucial for advancing our understanding of both healthy and pathological brain functions. To support this, we developed the LDCM toolbox.
@@ -26,11 +26,13 @@ Using this dataset, we will study the causal relationship between propofol blood
 In the below we provide some results of SS-Coh model when we run it on the Anesthesia data set. In these results, We applied the SS-GCoh model to the anesthesia data (Fig. 1); the inferred results suggest that the functional circuit changes during different phases of the experiment reliably encode underlying consciousness states. The inferred functional connectivity using SS-GCoh along with its temporal changes not only corroborates the empirical results in Purdon et al ., but also tracks the dynamics with a finer temporal resolution
 <br></br>
 
-![First](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/img3.png)
+![First](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/sscoh.jpg)
 
 **SS-GCoh analysis in Alpha band for anesthesia EEG data and its correspondence with empirical results.**
 <br>
 A) Inferred unconsciousness state estimation over 2 hours of anesthesia. The latent state represents the unconsciousness level; the state transition is modeled by a random-walk model. B) Scalp heat-map of the dominant eigenmodes for 3 different time points during the experiment. The result using SS-GCoh and empirical measures are similar to each other. C) Empirical GCoh and inferred GCoh using SS-GCoh. Not only the inferred coherence matches the empirical one; it attains it at a finer temporal resolution. With SS-GCoh, we also derive higher-order statistics of the coherence such as confidence interval.
+
+![second](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/goodness_fit.jpg)
 
 **Goodness-of-fit analyses and maximum likelihood (ML) curve**
 <br>
@@ -42,14 +44,20 @@ To get similar results, you can run provided code. After running GMM code, you w
 <h3>Latent Dynamical Coherence Model:</h3>
 In our previous work, we demonstrated a latent dynamical modeling framework called state-space global coherence, which characterizes spectral measures to capture slow-changing dynamics in network-level coherence. In this method, we develop a more general class of the state-space coherence model, that can capture fast and switching changes in the network-level rhythmic dynamics. For this framework, we assume both continuous and discrete latent processes derive the network-level rhythmic dynamics; this modeling assumption, will help us to build a more flexible model structure that can capture sophisticated dynamics present in the neural data. Below figure shows how we combine both continuous and switching dynamics in the model.
 
+![third](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/img1.png)
+
 <h4>Data</h4>
 To assess SS-Coh model, we use EEG data from human patients under general anesthesia. The data set was collected in Emery Brown’s laboratory.
 <br>
 The complete description of the experimental protocol can be found in Purdon et al . . Briefly, ten consenting human volunteers of ages 18-36 years were impaneled for the study approved by the MGH Human Research Committee. For each subject, the induction and emergence from propofol anesthesia were studied by administering a computer-controlled (StanPump) infusion of propofol using the target control protocol based on the Schnider pharmacokinetic-pharmacodynamic model, while the subject executed a behavioral task to identify the points of loss and recovery of consciousness. Neural activity was recorded from 64 channels of EEG at a 250 Hz sampling rate. The anesthesia data is publicly available at the following link: Anesthesia Data.
 
+![fourth](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/img2.png)
+
 Using this dataset, we will study the causal relationship between propofol blood concentration, level of consciousness, and spatio-temporal patterns of functional connectivity. Spectrograms, sliding window GCoh, and LDCM will be applied to identify network modes and their changes associated with loss of consciousness.
 <h4>Results</h4>
   Below figure shows how using of switching mechanism in the LDCM improves the accuracy of estimation in compareison with SS-Coh model.
+
+![fifth](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/img3.png)
 
   **LDCM Application in Anesthesia Data .**
   <br>
@@ -67,6 +75,9 @@ Data was recorded in 14-minute sessions, using a 20-channel dry-electrode EEG, w
 <h4>Results</h4>
 In thise section, we try to show different dynamics in the brain would occure when we have are doing different tasks. This analysis is utilizing number of clusters based on dominant eigenvectors of the Cross Spectral Matrix (CSM) in Alpha and Beta bands applied to human EEG data from a task-switching experiment.
 
+![sixth](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/cluster_analysis.jpg)
+
+
 **Task switching changes neural circuit engagement.**
 **A)** Coherogram shows task-dependent elevated synchrony in Alpha and Beta bands. **B)** Cluster indices derived by fitting the Gaussian mixture model to data points defined by stacking dominant eigenvectors of CSM in Alpha and Beta bands. The mixture model with 5 clusters gave the lowest BIC. The black circle shows the mode of indices per each segment of the experiment. Cluster index 3 represents EO, 2 represents MS, 5 represents RD, and 1 matches EC. Cluster index 4 might be another functional circuit present mostly in the MS segment. **C)** Mean of mixtures is projected on the scalp heatmap. The number on the top corresponds to the cluster index. The inferred clusters match the physiology as we observe an elevated occipital synchrony in the Alpha band during EO and frontal Beta band activity during MS segments.
 
@@ -80,6 +91,8 @@ Neural recordings of more than 3000 neurons are being recorded using eight-probe
 
 <h4>Results</h4>
 Below figure shows elevated synchrony in the high-theta band as the mice start moving whiskers and eye gaze direction in response to stimuli
+
+![seventh](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/stringer.jpg)
 
 **Behavioral changes accompany elevated coherence in spiking.**
 The coherence analysis is is shown for 250 seconds of the data. The coherence analysis is done over a subsampled neuronal population with 10 percent of neurons picked based on the brain regions (~100 neurons). **A)** Elevated synchrony in high-theta band starts from 150 seconds accompanying behavior change (red bar). There is a rapid switch in neural synchrony from the delta to the high-theta band around time 150 seconds. We hypothesize that the delta band synchrony is because of breathing; whilst the high-theta will represent some cognitive function **B)** Principal eigenvector over time showing more stable pattern of multi-neuron recruitment into synchronous group after 150 seconds. **C)** Images of mouse expression at time 50 and 200 seconds; the increased high-theta synchrony might encode elements of the behavior (eye gaze direction and increased whisking).
@@ -99,6 +112,9 @@ Data is publicly available. Please check the OpenNeuro Repository
 
 <h4>Results</h4>
 Here, we try to address how the stimulus content is being encoded in the spike timings of neural populations? Figure 1 shows point-process coherence analysis in the human Amygdala dataset. Preliminary result shows an increased synchrony in the Theta band (~3.5 Hz), which can be seen in this figure in aversive condition. This result corroborates physiological findings in rodents, where increased BLA’s neurons synchrony was observed in Theta band in response to fear stimulus ref.
+
+![seventh](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/amygdala.jpg)
+
 
 **Point-Process Coherence Analysis in Human Amygdala Dataset.** **(A)** 
 Cohereogram from 0.5 to 20 Hz in response to the neutral and aversive conditions. The stimulus starts at time 0 and lasts for 24 seconds. A clear increase in coherence can be seen from time 5 to 15 seconds in Theta band in the aversive condition, right panel. **(B)** Temporal progression of principal eigenvector. During the aversive condition, larger number of neurons are entrained to those with a regular spike timing. **(C)** Raster plot of 16 neurons in a sample trial in the neutral and aversive conditions. The increased synchrony can be easily seen in 5 to 15 seconds during the aversive condition.
