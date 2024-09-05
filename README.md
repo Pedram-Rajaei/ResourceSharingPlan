@@ -13,17 +13,17 @@ LDCM is valuable for both experimental and theoretical neuroscientists, as well 
   In the MDCA project, we provide different methods that we develop to characterize and analyize brain signals. We applied our methodologies on real data and parts of results are provided here. In the below, a short description foreach methods that is presented.
 
 <h3>State Space Coherence:</h3>
-    In State Space Coherence (SS-Coh) method, we provide mor robust algorithm for estimating Global Coherence (GCoh). To understand some aspects of SS-Coh modelling, you can read <a href="https://ieeexplore.ieee.org/abstract/document/8856634">EMBC-2019</a> and <a href="https://www.biorxiv.org/content/10.1101/2020.07.13.199034v1.abstract">bioRxiv-2020</a>. In the RO1 proposal, we provide more complete modelling of SS-Coh. The complete description of the experimental protocol can be found in <a href="https://www.pnas.org/doi/10.1073/pnas.1221180110">Purdon et al.
+    In State Space Coherence (SS-Coh) method, we provide mor robust algorithm for estimating Global Coherence (GCoh). To understand some aspects of SS-Coh modelling, you can read <a href="https://ieeexplore.ieee.org/abstract/document/8856634">EMBC-2019</a> and <a href="https://www.biorxiv.org/content/10.1101/2020.07.13.199034v1.abstract">bioRxiv-2020</a>. In the RO1 proposal, we provide more complete modelling of SS-Coh. The complete description of the experimental protocol can be found in <a href="https://www.pnas.org/doi/10.1073/pnas.1221180110">Purdon et al</a>.
 
 <h4>Data</h4> 
   To assess SS-Coh model, we use EEG data from human patients under general anesthesia. The data set was collected in Emery Brown’s laboratory.
 <br></br>
-  The complete description of the experimental protocol can be found in Purdon et al .. Briefly, ten consenting human volunteers of ages 18-36 years were impaneled for the study approved by the MGH Human Research Committee. For each subject, the induction and emergence from propofol anesthesia were studied by administering a computer-controlled (StanPump) infusion of propofol using the target control protocol based on the Schnider pharmacokinetic-pharmacodynamic model, while the subject executed a behavioral task to identify the points of loss and recovery of consciousness. Neural activity was recorded from 64 channels of EEG at a 250 Hz sampling rate. The anesthesia data is publicly available at the following link: Anesthesia Data.
+  The complete description of the experimental protocol can be found in <a href="https://www.pnas.org/doi/10.1073/pnas.1221180110">Purdon et al .</a>. Briefly, ten consenting human volunteers of ages 18-36 years were impaneled for the study approved by the MGH Human Research Committee. For each subject, the induction and emergence from propofol anesthesia were studied by administering a computer-controlled (StanPump) infusion of propofol using the target control protocol based on the Schnider pharmacokinetic-pharmacodynamic model, while the subject executed a behavioral task to identify the points of loss and recovery of consciousness. Neural activity was recorded from 64 channels of EEG at a 250 Hz sampling rate. The anesthesia data is publicly available at the following link: <a href="https://drive.google.com/file/d/1KMCtVw7Pcutf50iWzc-kfaK7_Q5XMJZD/view">Anesthesia Data.</a>
 <br></br>
 Using this dataset, we will study the causal relationship between propofol blood concentration, level of consciousness, and spatio-temporal patterns of functional connectivity. Spectrograms, sliding window GCoh, and LDCM will be applied to identify network modes and their changes associated with loss of consciousness.
 
 <h4>Results</h4> 
-In the below we provide some results of SS-Coh model when we run it on the Anesthesia data set. In these results, We applied the SS-GCoh model to the anesthesia data (Fig. 1); the inferred results suggest that the functional circuit changes during different phases of the experiment reliably encode underlying consciousness states. The inferred functional connectivity using SS-GCoh along with its temporal changes not only corroborates the empirical results in Purdon et al ., but also tracks the dynamics with a finer temporal resolution
+In the below we provide some results of SS-Coh model when we run it on the Anesthesia data set. In these results, We applied the SS-GCoh model to the anesthesia data (Fig. 1); the inferred results suggest that the functional circuit changes during different phases of the experiment reliably encode underlying consciousness states. The inferred functional connectivity using SS-GCoh along with its temporal changes not only corroborates the empirical results in <a href="https://www.pnas.org/doi/10.1073/pnas.1221180110">Purdon et al .</a>, but also tracks the dynamics with a finer temporal resolution
 <br></br>
 
 ![First](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/main/Imgs/sscoh.jpg)
@@ -42,14 +42,14 @@ A) Whitening transformation in the anestheisa shown for a pair of channels given
 To get similar results, you can run provided code. After running GMM code, you will obtain the same result that we provide in above figures
 
 <h3>Latent Dynamical Coherence Model:</h3>
-In our previous work, we demonstrated a latent dynamical modeling framework called state-space global coherence, which characterizes spectral measures to capture slow-changing dynamics in network-level coherence. In this method, we develop a more general class of the state-space coherence model, that can capture fast and switching changes in the network-level rhythmic dynamics. For this framework, we assume both continuous and discrete latent processes derive the network-level rhythmic dynamics; this modeling assumption, will help us to build a more flexible model structure that can capture sophisticated dynamics present in the neural data. Below figure shows how we combine both continuous and switching dynamics in the model.
+In our previous work, we demonstrated a latent dynamical modeling framework called <a href="https://github.com/YousefiLab/MDCA/tree/main/State%20Space%20Coherence">state-space global coherence</a>, which characterizes spectral measures to capture slow-changing dynamics in network-level coherence. In this method, we develop a more general class of the state-space coherence model, that can capture fast and switching changes in the network-level rhythmic dynamics. For this framework, we assume both continuous and discrete latent processes derive the network-level rhythmic dynamics; this modeling assumption, will help us to build a more flexible model structure that can capture sophisticated dynamics present in the neural data. Below figure shows how we combine both continuous and switching dynamics in the model.
 
 ![third](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/main/Imgs/img1.png)
 <br></br>
 <h4>Data</h4>
 To assess SS-Coh model, we use EEG data from human patients under general anesthesia. The data set was collected in Emery Brown’s laboratory.
 <br></br>
-The complete description of the experimental protocol can be found in Purdon et al . . Briefly, ten consenting human volunteers of ages 18-36 years were impaneled for the study approved by the MGH Human Research Committee. For each subject, the induction and emergence from propofol anesthesia were studied by administering a computer-controlled (StanPump) infusion of propofol using the target control protocol based on the Schnider pharmacokinetic-pharmacodynamic model, while the subject executed a behavioral task to identify the points of loss and recovery of consciousness. Neural activity was recorded from 64 channels of EEG at a 250 Hz sampling rate. The anesthesia data is publicly available at the following link: Anesthesia Data.
+The complete description of the experimental protocol can be found in <a href="https://www.pnas.org/doi/10.1073/pnas.1221180110">Purdon et al . </a>. Briefly, ten consenting human volunteers of ages 18-36 years were impaneled for the study approved by the MGH Human Research Committee. For each subject, the induction and emergence from propofol anesthesia were studied by administering a computer-controlled (StanPump) infusion of propofol using the target control protocol based on the Schnider pharmacokinetic-pharmacodynamic model, while the subject executed a behavioral task to identify the points of loss and recovery of consciousness. Neural activity was recorded from 64 channels of EEG at a 250 Hz sampling rate. The anesthesia data is publicly available at the following link: <a href="https://drive.google.com/file/d/1KMCtVw7Pcutf50iWzc-kfaK7_Q5XMJZD/view">Anesthesia Data.</a>
 <br></br>
 
 ![fourth](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/main/Imgs/img2.png)
@@ -86,11 +86,11 @@ In thise section, we try to show different dynamics in the brain would occure wh
 
 <h4>Implementation</h4>
 To get similar results, you can run provided code. After running GMM code, you will obtain the same result that we provide in above figures
+
 <h3>Stringer Data:</h3>
 Large scale recordings of brain-wide activity in awake mice during spontaneous behavior are publicly available to allow studies on how multidimensional behaviors are represented in distributed neural data. Using the mice dataset, we are interested in studying how coherence analysis will reveal interactions across neural nodes and their connections to behavior. To study the data, we will use empirical and parametric point-process coherence; we will also utilize mixed-data coherence analysis to study neural and behavioral data in tandem.
-
 <h4>Data</h4>
-Neural recordings of more than 3000 neurons are being recorded using eight-probe Neuropixels in awake mice (n=3), covering frontal, sensorimotor, retro-splenial cortex, hippocampus, striatum, thalamus, and mid-brain. The complete description of the experiment protocol can be found in Stringer et. al (2019). The analysis of this data revealed a multi-dimensional and brain-wide representation of the behavior. The result also shows despite behavior and neural activity contained fast-time scale fluctuations on the order of 200 msec, they are related to each other on a time scale of 1 second. Data set is publicly available in the following link: Download data
+Neural recordings of more than 3000 neurons are being recorded using eight-probe Neuropixels in awake mice (n=3), covering frontal, sensorimotor, retro-splenial cortex, hippocampus, striatum, thalamus, and mid-brain. The complete description of the experiment protocol can be found in <a href="https://www.nature.com/articles/s41586-019-1346-5">Stringer et.</a> al (2019). The analysis of this data revealed a multi-dimensional and brain-wide representation of the behavior. The result also shows despite behavior and neural activity contained fast-time scale fluctuations on the order of 200 msec, they are related to each other on a time scale of 1 second. Data set is publicly available in the following link: <a href="https://figshare.com/articles/dataset/LFP_data_for_8-Neuropixels_recordings_from_Stringer_et_al_2019_Science/8784311">Download data</a>
 
 <h4>Results</h4>
 Below figure shows elevated synchrony in the high-theta band as the mice start moving whiskers and eye gaze direction in response to stimuli
@@ -112,10 +112,10 @@ We present an electrophysiological dataset collected from the amygdalae of nine 
 
 We provide the recordings of intracranial EEG (iEEG) and metadata related to the task, subjects, sessions and electrodes in the BIDS standard.
 
-Data is publicly available. Please check the OpenNeuro Repository
+Data is publicly available. Please check the <a href="https://openneuro.org/datasets/ds003374/versions/1.1.1">OpenNeuro Repository</a>
 
 <h4>Results</h4>
-Here, we try to address how the stimulus content is being encoded in the spike timings of neural populations? Figure 1 shows point-process coherence analysis in the human Amygdala dataset. Preliminary result shows an increased synchrony in the Theta band (~3.5 Hz), which can be seen in this figure in aversive condition. This result corroborates physiological findings in rodents, where increased BLA’s neurons synchrony was observed in Theta band in response to fear stimulus ref.
+Here, we try to address how the stimulus content is being encoded in the spike timings of neural populations? Figure 1 shows point-process coherence analysis in the human Amygdala dataset. Preliminary result shows an increased synchrony in the Theta band (~3.5 Hz), which can be seen in this figure in aversive condition. This result corroborates physiological findings in rodents, where increased BLA’s neurons synchrony was observed in Theta band in response to fear stimulus <a href="https://pubmed.ncbi.nlm.nih.gov/21738775/">ref</a>.
 
 ![seventh](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/main/Imgs/amygdala.jpg)
 
