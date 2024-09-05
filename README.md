@@ -6,8 +6,8 @@
   In developing LDCM, we hypothesized that neural circuits can be identified by examining the full cross-spectral matrix (CSM) between neural sources—either through explicit or implicit characterization—and by identifying a small set of eigenvectors that serve as proxies for functional circuits. These eigenvectors capture the majority of co-variability in the data. The resulting estimated circuit structure is termed the "functional eigenmodes" of the system, with the associated eigenvalues characterizing the degree of engagement or disengagement of each circuit during cognitive tasks or in response to stimuli.
 <br></br>
   LDCM is an open-source toolbox written in Python, offering a comprehensive modeling pipeline that includes model selection, simulation analysis, model identification, and validation processes. To facilitate analysis, LDCM provides multiple step-by-step examples that align modeling hypotheses with their implementation in the code. Additionally, the toolbox includes a manual explaining the theoretical foundations of each modeling approach and providing detailed instructions for using the functions.
-
-  LDCM is valuable for both experimental and theoretical neuroscientists, as well as researchers interested in studying brain function in conjunction with cognition and information processing. It also offers tools for clinicians and scientists investigating the connection between the brain and pathological states. While a basic understanding of neuroscience, dynamical systems, and functional connectivity is recommended, we strive to integrate this knowledge within the explanations of every example included in the toolbox.
+<br></br>
+LDCM is valuable for both experimental and theoretical neuroscientists, as well as researchers interested in studying brain function in conjunction with cognition and information processing. It also offers tools for clinicians and scientists investigating the connection between the brain and pathological states. While a basic understanding of neuroscience, dynamical systems, and functional connectivity is recommended, we strive to integrate this knowledge within the explanations of every example included in the toolbox.
 
 <h2>Quick start:</h2>
   In the MDCA project, we provide different methods that we develop to characterize and analyize brain signals. We applied our methodologies on real data and parts of results are provided here. In the below, a short description foreach methods that is presented.
@@ -50,12 +50,15 @@ In our previous work, we demonstrated a latent dynamical modeling framework call
 To assess SS-Coh model, we use EEG data from human patients under general anesthesia. The data set was collected in Emery Brown’s laboratory.
 <br></br>
 The complete description of the experimental protocol can be found in Purdon et al . . Briefly, ten consenting human volunteers of ages 18-36 years were impaneled for the study approved by the MGH Human Research Committee. For each subject, the induction and emergence from propofol anesthesia were studied by administering a computer-controlled (StanPump) infusion of propofol using the target control protocol based on the Schnider pharmacokinetic-pharmacodynamic model, while the subject executed a behavioral task to identify the points of loss and recovery of consciousness. Neural activity was recorded from 64 channels of EEG at a 250 Hz sampling rate. The anesthesia data is publicly available at the following link: Anesthesia Data.
+<br></br>
 
 ![fourth](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/img2.png)
+
 <br></br>
 Using this dataset, we will study the causal relationship between propofol blood concentration, level of consciousness, and spatio-temporal patterns of functional connectivity. Spectrograms, sliding window GCoh, and LDCM will be applied to identify network modes and their changes associated with loss of consciousness.
 <h4>Results</h4>
   Below figure shows how using of switching mechanism in the LDCM improves the accuracy of estimation in compareison with SS-Coh model.
+<br></br>
 
 ![fifth](https://github.com/Pedram-Rajaei/ResourceSharingPlan/blob/Pedram-Rajaei-patch-1/Imgs/img3.png)
 
